@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    /* background-color: #744040; */
+    /* color: yellow; */
+    scroll-behavior: smooth;
+}
+body{
+    background-color: bisque;
+}
+button{
+    border: 1px solid gray !important;
+    padding: 0 !important;
+}
+form button{
+    padding: 5px !important; 
+}
+.github-btn{
+    background-color: #0e1d44;
+    color: white;
+}
+.header{
+    background-color: #244192;
+    color: white !important;
+    padding: 7px 0;
+
+}
+.header a{
+    color: white;
+    /* background-color: #213363 !important; */
+    text-decoration: none;
+}
+.social_links{
+    display: flex;
+    gap: 7px;
+}
+.social_links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+
+}
+.mail{
+    display: flex;
+    align-items: center;
+}
+.mail i{
+    display: inline-block;
+    margin-right: 7px;
+}
+.nbr{
+    background-color:  #0e1d44;
+    color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    /* border: 2px solid red; */
+}
+.nbr > div{
+    width: 91%;
+    margin: auto;
+    display: flex;
+    /* border: 2px solid red; */
+}
+.nbr h1{ 
+    padding-right: 12px;
+    font-size: 1.5em;
+}
+.navbar{
+    display: flex;
+    margin-left: 10px;
+    gap: 10px;
+    flex-direction: row;
+    color: black;
+    padding-top: 5px;
+    color: yellow;
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
+    color: red;
+    font-family: sans-serif;
+}
+header{
+    width: 90%;
+    margin: auto;
+}
+.main{
+    display: flex;
+    margin: 105px 125px;
+    width: 75%;
+    height: 350px;
+    background-color: rgb(39, 38, 73);
+    border-radius: 10px;
+    justify-content: space-around;
+    padding: 10px; 
+    color: white;
+    font-family: sans-serif;
+}
+.intro1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(39, 38, 73);
+}
+.intro2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(39, 38, 73);
+}
+.intro2 a:hover{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 3px;
+    width: 90px;
+}
+.intro2 h3{
+    padding: 8px;
+    font-size: 2rem;
+    background-color: rgb(39, 38, 73);
+}
+.intro2 h1{
+    font: 3rem;
+    background-color: rgb(39, 38, 73);
+}
+.intro1 img{
+    padding: 12px;
+    border-radius: 50%;
+}
+.intro2 a{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 4px;
+    width: 90px;
+}
+
+
+/* contact file CSS */
+
+.contact_form{
+    width: 75%;
+}
+.contact_form h1{
+    gap: 7px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+}
+.contact_form_parent{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    color: black;
+    width: 75%;
+    margin: auto;
+    
+}
+.contact_form label{
+    margin: 10px;
+    /* color: yellow; */
+    display: inline-block;
+    width: 100px;
+}
+.contact_form button{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    /* width: 200px; */
+    background-color: rgb(78, 95, 112);
+    color: white;
+    box-shadow: 3px 3px 3px 0px black;
+}
+.contact_form input{
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+}
+.contact_form input:focus{
+    outline: none;
+}
+#textarea{
+    margin-top: 12px;
+    border: 2px solid gray;
+}
+#textarea:focus{
+    outline: none;
+}
+
+/* About file CSS */
+
+
+.about_parent{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* this is Education file CSS */
+
+.edu{
+    /* border: 2px solid red; */
+    padding: 30px;
+}
+.edu h1{
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+.education{
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-color: rgb(243, 237, 237);
+}
+.education:hover{
+    box-shadow: 5px 5px 5px 5px  rgb(243, 60, 60);
+}
+.education .img{
+    display: flex;
+    justify-content: space-between;
+}
+.education .img img{
+    width: 30%;
+    border-radius: 0px;
+}
+.education .img .education_text{
+    width: 70%; 
+    margin-left: 20px;
+    margin-top: 10px;
+    /* background-color: white; */
+}
+.education_text h4{
+    color: rgb(59, 121, 59);
+}
+
+/* This is project File CSS */
+
+.project_container{
+    display: flex;
+    justify-content: space-between;
+}
+.project{
+    width: 25%;
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 10px;
+
+}
+.project img{
+    width: 100%;
+    height: 200px;
+}
+.project-desc{
+    height: calc(3em*1.6);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    /* border: 1px solid red; */
+}
+
+
+/* This is Skill File */
+.skill{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 10px;
+}
+.skill_box{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+.skill_box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 0%;
+}
+.skill_box span{
+    font-weight: bold;
+}
+
+/* Footer File CSS */
+
+
+.footer{
+    /* border: 2px solid red; */
+    background-color: rgb(37, 37, 37);
+    /* background-color: #213363; */
+    margin-top: 25px;
+    color: white;
+    display: flex;
+    justify-content: space-between ;
+    padding-top: 20px;
+    
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+.map{
+    margin-bottom: 25px;
+    width: 50%;
+}
+/* Top button CSS */
+
+
+.top_anchar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
