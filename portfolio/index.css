@@ -93,15 +93,20 @@ header{
 }
 .main{
     display: flex;
-    margin: 105px 125px;
+    /* margin: 105px 125px; */
     width: 75%;
-    height: 350px;
+    min-height: 350px;
     background-color: rgb(39, 38, 73);
     border-radius: 10px;
     justify-content: space-around;
     padding: 10px; 
     color: white;
     font-family: sans-serif;
+}
+@media (max-width:575px) {
+    .main{
+        display: block;
+    }
 }
 .intro1{
     align-items: center;
@@ -147,14 +152,13 @@ header{
 
 /* contact file CSS */
 
-.contact_form{
+/* .contact_form{
     width: 75%;
 }
 .contact_form h1{
     gap: 7px;
     font-weight: bold;
     margin-bottom: 20px;
-    /* border: 2px solid red; */
 }
 .contact_form_parent{
     display: flex;
@@ -167,7 +171,6 @@ header{
 }
 .contact_form label{
     margin: 10px;
-    /* color: yellow; */
     display: inline-block;
     width: 100px;
 }
@@ -175,7 +178,6 @@ header{
     margin: 10px;
     display: flex;
     justify-content: center;
-    /* width: 200px; */
     background-color: rgb(78, 95, 112);
     color: white;
     box-shadow: 3px 3px 3px 0px black;
@@ -195,7 +197,9 @@ header{
 }
 #textarea:focus{
     outline: none;
-}
+} */
+
+
 
 /* About file CSS */
 
@@ -232,6 +236,16 @@ header{
 .education .img{
     display: flex;
     justify-content: space-between;
+    /* border: 2px solid red; */
+}
+@media (max-width:575px) {
+    .education .img{
+        flex-direction: column;
+    }
+    .education .img img{
+        width: 100% !important;
+    }
+    
 }
 .education .img img{
     width: 30%;
@@ -254,11 +268,29 @@ header{
     justify-content: space-between;
 }
 .project{
-    width: 25%;
+    width: 30%;
     border: 1px solid gray;
     border-radius: 7px;
     padding: 10px;
 
+}
+@media (max-width:767px) {
+    .project{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .project_container{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:500px) {
+    .project{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .project_container{
+        flex-wrap: wrap;
+    }
 }
 .project img{
     width: 100%;
@@ -274,23 +306,18 @@ header{
 
 
 /* This is Skill File */
-.skill{
-    /* border: 2px solid red; */
-    display: flex;
-    gap: 10px;
-}
+
 .skill_box{
-    width: 150px;
-    height: 150px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     border-radius: 10px;
 }
 .skill_box img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 0%;
 }
 .skill_box span{
@@ -335,4 +362,7 @@ footer a{
     background-color: black;
     color: white;
     text-decoration: none;
+}
+@media screen {
+    
 }
